@@ -1,0 +1,72 @@
+{
+  "model_version": "bh-20261014",
+  "trained_at": "2026-10-14T01:32:57+00:00",
+  "dataset": "ev-battery-health-and-degradation-dataset (Kaggle, vinay24baghira)",
+  "interval_level": 0.8,
+  "sklearn_version": "1.6.1",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.1.3",
+  "n_train_batteries": 1690,
+  "n_calib_batteries": 390,
+  "n_test_batteries": 520,
+  "test_metrics": {
+    "MAE SOH (poin persen)": 0.6903,
+    "MAE RUL (siklus)": 296.7081,
+    "Coverage interval SOH (80%)": 0.7998,
+    "Coverage interval RUL (80%)": 0.8007,
+    "Rata2 lebar interval SOH (poin)": 2.2648,
+    "Rata2 lebar interval RUL (siklus)": 908.2632,
+    "Akurasi grade A-D": 0.9856,
+    "Akurasi grade (toleransi 1 tingkat)": 0.9999,
+    "Salah grade jika SOH asli <=2 poin dari batas": 0.2586,
+    "Salah grade jika SOH asli >2 poin dari batas": 0.0027,
+    "Brier score keyakinan": 0.0106,
+    "ECE keyakinan": 0.0024,
+    "Jumlah baterai test": 520.0,
+    "Jumlah baris test": 10134.0
+  },
+  "grade_thresholds": {
+    "A": 80.0,
+    "B": 70.0,
+    "C": 60.0
+  },
+  "features": {
+    "numeric": [
+      "pack_capacity_kwh",
+      "battery_age_days",
+      "cycle_count",
+      "avg_daily_distance_km",
+      "avg_charging_power_kw",
+      "fast_charge_ratio",
+      "avg_depth_of_discharge_pct",
+      "avg_state_of_charge_pct",
+      "charge_cycles_per_month",
+      "total_energy_throughput_kwh",
+      "avg_ambient_temp_c",
+      "humidity_pct",
+      "altitude_m",
+      "internal_resistance_mohm",
+      "voltage_avg_v",
+      "current_avg_a",
+      "charge_time_avg_min",
+      "peak_temp_during_fast_charge_c",
+      "service_count",
+      "recall_flag"
+    ],
+    "categorical": [
+      "chemistry",
+      "climate_zone"
+    ]
+  },
+  "requirements": {
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "joblib": "1.6.0"
+  },
+  "limitations": [
+    "Dilatih pada dataset publik; belum divalidasi pada pack EV nyata.",
+    "Interval 80% bersifat marginal (rata-rata), bukan jaminan per baterai.",
+    "Skor keyakinan = perkiraan probabilitas grade benar, bukan jaminan."
+  ]
+}

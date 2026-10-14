@@ -1,0 +1,15 @@
+metrik,nilai,catatan
+MAE SOH (poin persen),0.6903,tengah (kuantil 50) vs SOH asli
+MAE RUL (siklus),296.7081,tengah (kuantil 50) vs RUL asli
+Coverage interval SOH (80%),0.7998,target ~0.80
+Coverage interval RUL (80%),0.8007,target ~0.80
+Rata2 lebar interval SOH (poin),2.2648,makin sempit makin tajam
+Rata2 lebar interval RUL (siklus),908.2632,makin sempit makin tajam
+Akurasi grade A-D,0.9856,grade dari SOH tengah
+Akurasi grade (toleransi 1 tingkat),0.9999,salah paling jauh 1 grade
+Salah grade jika SOH asli <=2 poin dari batas,0.2586,kesalahan terkonsentrasi di dekat batas
+Salah grade jika SOH asli >2 poin dari batas,0.0027,
+Brier score keyakinan,0.0106,makin kecil makin baik
+ECE keyakinan,0.0024,makin kecil makin terkalibrasi
+Jumlah baterai test,520.0,
+Jumlah baris test,10134.0,

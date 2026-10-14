@@ -1,0 +1,30 @@
+{
+  "passport_version": "1.0",
+  "battery_id": "BATT_00651",
+  "assessed_at": "2026-10-14T01:32:57+00:00",
+  "grade": "A",
+  "grade_range": {
+    "worst_case": "A",
+    "best_case": "A"
+  },
+  "state_of_health_pct": {
+    "lower": 97.8,
+    "mid": 99.5,
+    "upper": 100.0
+  },
+  "remaining_life_cycles": {
+    "lower": 798,
+    "mid": 1414,
+    "upper": 1658
+  },
+  "interval_level": 0.8,
+  "confidence": 1.0,
+  "confidence_meaning": "Perkiraan probabilitas grade benar; dibatasi kelengkapan input bila <80% fitur terisi.",
+  "input_completeness": 0.91,
+  "warnings": [],
+  "model": {
+    "version": "bh-20261014",
+    "trained_at": "2026-10-14T01:32:57+00:00",
+    "dataset": "ev-battery-health-and-degradation-dataset (Kaggle, vinay24baghira)"
+  }
+}
